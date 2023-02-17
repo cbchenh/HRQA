@@ -22,7 +22,7 @@ function [Cv] = IFS(s, K, a, opt)
         error('The input sequence, s, is empty.')
     end
     s = reshape(s,[length(s) 1]);
-    if nargin == 3
+    if nargin < 4
         opt = 0;
     end
     if nargin < 3
